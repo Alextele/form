@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+<form action="reg.php" method="post" class="form-apply" >
+    <fieldset class="form-apply__fieldset">
+        <legend class="form-apply__legend">Персональные данные</legend>
+        <label for="appl-name" class="form-apply__label">Ваше имя:</label>
+        <input type="text" class="form-apply__input" name="appl-name" id="appl-name" required placeholder="Введите ваше имя">
+        <label for="appl-surname" class="form-apply__label">Ваша фамилия:</label>
+        <input type="text" class="form-apply__input" name="appl-surname" id="appl-surname" required placeholder="Ваша фамилия">
+    </fieldset>
+    <fieldset class="form-apply__fieldset">
+        <label for="appl-agree" class="form-apply__checkbox-label">
+        <div class="form-apply--custom-checkbox">
+            <input type="checkbox" class="form-apply__checkbox" name="appl-agree" id="appl-agree" required checked>
+            <span class="tick"></span>
+        </div>
+        <span class="form-apply__checkbox-label__text">Согласен с обработкой данных</span></label>
+    </fieldset>
+    <fieldset class="form-apply__fieldset text-center">
+        <input class="form-apply__btn" type="submit" value="Отправить">
+        <input class="form-apply__btn" type="reset" value="Очистить">
+    </fieldset>
+</form>
+</body>
+</html>
